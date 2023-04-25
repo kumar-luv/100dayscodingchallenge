@@ -13,9 +13,9 @@ class Solution
         if(open>0){
             s.push_back('(');
             generate(s,open-1,close);
-            cout<<s<<endl;
+            //cout<<s<<endl;
             s.pop_back();
-            cout<<s<<endl;
+            //cout<<s<<endl;
         }
         if(close>0){
             if(open<close){
