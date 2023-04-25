@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct MyStack{
+class MyStack{
+public:
     int *arr;
     int cap;
     int top;
@@ -12,7 +13,9 @@ struct MyStack{
     }
     
     void push(int x){
-        if(top==cap-1){cout<<"Stack is full"<<endl;return;}
+        if(top==cap-1){cout<<"Stack is full"<<endl;
+        return;
+    }
         top++;
         arr[top]=x;
     }
@@ -48,6 +51,9 @@ int main()
     cout<<s.size()<<endl;
     cout<<s.peek()<<endl;
     cout<<s.isEmpty()<<endl;
+    cout<<s.pop()<<endl;
+    cout<<s.pop()<<endl;
+    cout<<s.pop()<<endl;
   
     return 0; 
 }
